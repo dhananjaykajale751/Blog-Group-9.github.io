@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog for Mini Project</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <section id="title">
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="">ANI-CE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Literature</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <!-- Title -->
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h1>Rescue and Care the helpless strays nearby.</h1>
+
+                </div>
+                <div class="col-lg-6">
+                    <img src=" data:image/jpeg;base64,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"
+                        alt="iphone-mockup " class="iphone">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+
+
+    <section id="features">
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-heart fa-4x" id="icon"></i>
+                <h3>Stray Rescue.</h3>
+                <p>The injured stray animals will be rescued and treated</p>
+            </div>
+
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-shield-dog fa-4x" id="icon"></i>
+                <h3>Dumping dead strays</h3>
+                <p>Dumping the dead strays will keep the enviornment clean.</p>
+            </div>
+
+            <div class="feature-box col-lg-4">
+                <i class="fa-solid fa-tent-arrow-down-to-line fa-4x" id="icon"></i>
+                <h3>Shelter homes to pets</h3>
+                <p>Find the Shelter home for your pet and enjoy the vaccation.</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section id="press">
+        <img class="press-img" src="gcoen.jpg " alt="tc-logo ">
+        <h2>Government College of Engineering ,Nagpur</h2>
+        <h5>-: Project Made by :-</h5>
+        <h5> Dhananjay Kajale</h5>
+        <h5>Shazaad Vinaad</h5>
+        <h5>Simran Kumar</h5>
+        <h5>Sayali Rathod</h5>
+        <h5>Jivida Bagade</h5>
+
+    </section>
+
+
+
+
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+        <div class="footer-contain">
+
+            <h3 class="footer-txt">The need for ANI-CE:- </h3>
+            <p class="footer-txts"> Every day we go outside we see there are number of stray animals like dogs, cats, cows, etc. These strays may be vaccinated or not we don’t have information about it. Such stray animals are very dangerous to the human beings. If a person comes
+                in contact with such animal, it may lead to severe disease. Also, if a person comes in contact with an injured animal it may lead to infections, rashes and bacterial diseases. Along with this all those pains, all those sufferings to the
+                strays we need to make a solution to all these problems. The rate of increase of stray dogs is at very high rate. The stray dogs are a big problem to the children in the area. While travelling on the road every time we see either a cat
+                or a dog dead on the road due to accident. Such dead animals make the environment unclean. The smell caused by the decaying dead animals is extremely unbearable. The animals dead on the road are a big problem to bikers. Sometimes, such
+                dead animals become the reason for big accidents. Such accidents may lead to several injuries or death of people. The animals dead due to any disease are very hazardous. Such dead animals can transmit their disease either to other animals
+                or even to the human beings. There is a need to locate and dump these animals in such a way that it doesn’t affect the environment.
+            </p>
+            <h3 class="footer-txt">Literature Review:- </h3>
+            <h4 class="footer-txts">Literatures we used </h4>
+            <h5 class="footer-txts">1. Bombay Veternary Report 2021</h5>
+            <h5 class="footer-txts">2. Dog Adoption 2022</h5>
+            <h5 class="footer-txts">3. Animal Welfare by Narayan Edward in 2021</h5>
+            <h5 class="footer-txts">4. Research in Animal Sheltering”, A Conceptual Analysis</h5>
+
+            <h3 class="footer-txt">The functioning of ANI-CE:- </h3>
+            <p class="footer-txts">Our web application ANI-CE basically works for the wellbeing of the stray,abandoned and pet animals. Any nearby passer when sees any injured animal on the street can upload its photo or videos along with the location on the web application
+                which further results in rescue of that animal by the near by NGO registered on the web application. ANI-CE also allows the registration of the NGOs and animal shelter homes to contribute to the mentioned cause</p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="foot">
+            <i class="fa-solid fa-info"></i> About
+            <p>The ANI-CE is a project basically made for rescue and care of the stray animals. Also it will help to dump the dead animals which will help to keep the area clean and help to reduce the bacterial infections due to it. It will also help to
+                find shelters homes for the pets of the pet parents.</p>
+            <h4>Regards</h4>
+            <h4>Dr. Prashant B. Jawade - Our Project Guide</h4>
+            <h4> Dr. Latesh Bhagat - Head of CSE Department</h4>
+            <h4> Chandrajeet Borkar - Project Incharge</h4>
+        </div>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
